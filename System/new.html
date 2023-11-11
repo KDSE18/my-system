@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    
+<meta charset="UTF-8">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+<link rel="stylesheet" href="new.css">
+    
+<title>Add to Cart</title>
+
+
+<script>
+    
+function calculateTotal() {
+        
+var total = 0;
+        
+var items = document.getElementsByName('item');
+
+        
+
+for (var i = 0; i < items.length; i++) {
+            
+if (items[i].checked) {
+              
+  total += parseFloat(items[i].value);
+          
+  }
+      
+  }
+
+       
+
+ document.getElementById("total").innerHTML = "Total: RS. " + total.toFixed(2);
+    
+}
+
+</script>
+
+</head>
+
+<body>
+  
+
+<header>
+<h1 id="pizza">Sri lankan Pizza</h1>
+</header>  
+
+<div class="cover">
+<div class="product">
+        
+<img src="IMG_20231018_135217.jpg" alt="Product Image">
+        
+<h4>Seafood supremo thin crust pizza large</h4>
+        
+<p>Price:Rs. 3000</p>
+       
+ <label for="quantity">Quantity:</label>
+        
+<input type="number" id="quantity" name="quantity" value="1">
+ 
+  <label>
+        
+<input type="checkbox" name="item" value="3000.00"> Add item  
+ </label><br>
+
+         
+
+   
+ </div>
+
+
+<div class="product">
+        
+<img src="IMG_20231018_135224.jpg" alt="Product Image">
+        
+<h4>Veggie Supreme Sausage Crust Large</h4>
+        
+<p>Price:Rs. 1800</p>
+       
+ <label for="quantity">Quantity:</label>
+        
+<input type="number" id="quantity" name="quantity" value="1">
+
+<input type="checkbox" name="item" value="1800.00"> Add item         
+</label>
+ </div>
+
+
+<div class="product">
+        
+<img src="IMG_20231018_135329.jpg" alt="Product Image">
+        
+<h4>Chicken Trio Thin Crust Large</h4>
+        
+<p>Price:Rs. 2460</p>
+       
+ <label for="quantity">Quantity:</label>
+        
+<input type="number" id="quantity" name="quantity" value="1">
+       
+<input type="checkbox" name="item" value="2460.00"> Add item         
+</label>
+ </div>
+
+
+<div class="product">
+        
+<img src="IMG_20231018_135329.jpg" alt="Product Image">
+        
+<h4>Chicken BBQ Thin Crust Large</h4>
+        
+<p>Price:Rs. 1700</p>
+       
+ <label for="quantity">Quantity:</label>
+        
+<input type="number" id="quantity" name="quantity" value="1">
+        
+<input type="checkbox" name="item" value="1700.00"> Add item         
+</label> 
+ </div>
+
+
+
+<div class="product">
+        
+<img src="IMG_20231018_135351.jpg" alt="Product Image">
+        
+<h4>Sausage Delight Sausage Crust Large</h4>
+        
+<p>Price:Rs. 2000</p>
+       
+ <label for="quantity">Quantity:</label>
+        
+<input type="number" id="quantity" name="quantity" value="1">
+        
+<input type="checkbox" name="item" value="2000.00"> Add item         
+</label> 
+ </div>
+
+
+
+
+<div class="product">
+        
+<img src="IMG_20231018_135403.jpg" alt="Product Image">
+        
+<h4>Chees Lovers Sausage Crust Large</h4>
+        
+<p>Price:Rs. 2500</p>
+       
+ <label for="quantity">Quantity:</label>
+        
+<input type="number" id="quantity" name="quantity" value="1">
+     
+<input type="checkbox" name="item" value="2500.00"> Add item         
+</label> 
+ </div>
+</div>
+
+
+<hr color="red" size="10%">
+
+<header>
+  <h1 id="Rice">Rice And Curry</h1>
+  </header>  
+  
+  <div class="cover">
+  <div class="product">
+          
+  <img src="1607658862183_1.jpg" alt="Product Image">
+          
+  <h4>Yellow Rice And Curry With Fish Devilled</h4>
+          
+  <p>Price:Rs. 700</p>
+         
+   <label for="quantity">Quantity:</label>
+          
+  <input type="number" id="quantity" name="quantity" value="1">
+   
+    <label>
+          
+  <input type="checkbox" name="item" value="700.00"> Add item  
+   </label><br>
+  
+           
+  
+     
+   </div>
+  
+  
+  <div class="product">
+          
+  <img src="1607662165346_15.jpg" alt="Product Image">
+          
+  <h4>Fried Rice And Curry With Chicken Deviled</h4>
+          
+  <p>Price:Rs. 750</p>
+         
+   <label for="quantity">Quantity:</label>
+          
+  <input type="number" id="quantity" name="quantity" value="1">
+  
+  <input type="checkbox" name="item" value="750.00"> Add item         
+  </label>
+   </div>
+  
+  
+  <div class="product">
+          
+  <img src="1641287842938_ricecurryveg_m.jpg" alt="Product Image">
+          
+  <h4>Rice And Curry vegetable</h4>
+          
+  <p>Price:Rs.650</p>
+         
+   <label for="quantity">Quantity:</label>
+          
+  <input type="number" id="quantity" name="quantity" value="1">
+         
+  <input type="checkbox" name="item" value="650.00"> Add item         
+  </label>
+   </div>
+  
+  
+  <div class="product">
+          
+  <img src="1643083505881_j_m.jpg" alt="Product Image">
+          
+  <h4>Rice And Curry With DevillednPrawns</h4>
+          
+  <p>Price:Rs. 750</p>
+         
+   <label for="quantity">Quantity:</label>
+          
+  <input type="number" id="quantity" name="quantity" value="1">
+          
+  <input type="checkbox" name="item" value=" 750.00"> Add item         
+  </label> 
+   </div>
+  
+  
+  
+  <div class="product">
+          
+  <img src="IMG_20231018_133108.jpg" alt="Product Image">
+          
+  <h4>Rice And Curry Eith Chicken Curry</h4>
+          
+  <p>Price:Rs.  700</p>
+         
+   <label for="quantity">Quantity:</label>
+          
+  <input type="number" id="quantity" name="quantity" value="1">
+          
+  <input type="checkbox" name="item" value=" 700.00"> Add item         
+  </label> 
+   </div>
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <hr color="red" size="10%">
+  
+  <header>
+    <h1 id="Burger">Burger</h1>
+    </header>  
+    
+    <div class="cover">
+    <div class="product">
+            
+    <img src="IMG_20231018_221432.jpg" alt="Product Image">
+            
+    <h4>Whopper-Chicken-Burger</h4>
+            
+    <p>Price:Rs.1200</p>
+           
+     <label for="quantity">Quantity:</label>
+            
+    <input type="number" id="quantity" name="quantity" value="1">
+     
+      <label>
+            
+    <input type="checkbox" name="item" value="1200.00"> Add item  
+     </label><br>
+    
+             
+    
+       
+     </div>
+    
+    
+    <div class="product">
+            
+    <img src="IMG_20231018_221438.jpg" alt="Product Image">
+            
+    <h4>Spicy Chicken Burger</h4>
+            
+    <p>Price:Rs.  1100</p>
+           
+     <label for="quantity">Quantity:</label>
+            
+    <input type="number" id="quantity" name="quantity" value="1">
+    
+    <input type="checkbox" name="item" value=" 1100.00"> Add item         
+    </label>
+     </div>
+    
+    
+    <div class="product">
+            
+    <img src="IMG_20231018_221426.jpg" alt="Product Image">
+            
+    <h4>Taxas Smokhehousen Chicken Whopper Meal</h4>
+            
+    <p>Price:Rs. 1500</p>
+           
+     <label for="quantity">Quantity:</label>
+            
+    <input type="number" id="quantity" name="quantity" value="1">
+           
+    <input type="checkbox" name="item" value="1500.00"> Add item         
+    </label>
+     </div>
+    
+    
+    <div class="product">
+            
+    <img src="IMG_20231018_221444.jpg" alt="Product Image">
+            
+    <h4>Big King Veggie Burger Meal</h4>
+            
+    <p>Price:Rs. 1800</p>
+           
+     <label for="quantity">Quantity:</label>
+            
+    <input type="number" id="quantity" name="quantity" value="1">
+            
+    <input type="checkbox" name="item" value="1800.00"> Add item         
+    </label> 
+     </div>
+    
+    
+    </div>
+    
+    
+    <hr color="red" size="10%">
+    
+    <header>
+      <h1 id="Koththu">Koththu</h1>
+      </header>  
+      
+      <div class="cover">
+      <div class="product">
+              
+      <img src="1628679513618_dsc08027_m.jpg" alt="Product Image">
+              
+      <h4>Cuttlefish Kottu-Small</h4>
+              
+      <p>Price:Rs.1200</p>
+             
+       <label for="quantity">Quantity:</label>
+              
+      <input type="number" id="quantity" name="quantity" value="1">
+       
+        <label>
+              
+      <input type="checkbox" name="item" value="1200.00"> Add item  
+       </label><br>
+      
+               
+      
+         
+       </div>
+      
+      
+      <div class="product">
+              
+      <img src="1628701272816_dsc07413_m.jpg" alt="Product Image">
+              
+      <h4>Spicy Chicken Burger</h4>
+              
+      <p>Price:Rs.  1100</p>
+             
+       <label for="quantity">Quantity:</label>
+              
+      <input type="number" id="quantity" name="quantity" value="1">
+      
+      <input type="checkbox" name="item" value=" 1100.00"> Add item         
+      </label>
+       </div>
+      
+      
+    </div
+      
+    <hr color="red" size="10%">
+      
+    <header>
+      <h1 id="Fried">Fried Rice</h1>
+      </header>  
+      
+      <div class="cover">
+      <div class="product">
+              
+      <img src="1628777599108_dsc07430_m.jpg" alt="Product Image">
+              
+      <h4>Vegitable Fried Rice- Small</h4>
+              
+      <p>Price:Rs. 960</p>
+             
+       <label for="quantity">Quantity:</label>
+              
+      <input type="number" id="quantity" name="quantity" value="1">
+       
+        <label>
+              
+      <input type="checkbox" name="item" value=" 960.00"> Add item  
+       </label><br>
+      
+               
+      
+         
+       </div>
+      
+      
+      <div class="product">
+              
+      <img src="1628777601305_dsc07452_m.jpg" alt="Product Image">
+              
+      <h4>Fish Fried Rice-Small</h4>
+              
+      <p>Price:Rs.  1100</p>
+             
+       <label for="quantity">Quantity:</label>
+              
+      <input type="number" id="quantity" name="quantity" value="1">
+      
+      <input type="checkbox" name="item" value=" 1100.00"> Add item         
+      </label>
+       </div>
+      
+      
+      
+      
+      </div>
+      
+      
+      <hr color="red" size="10%">
+      <header>
+        <h1 id="Biriyani">Biriyani</h1>
+        </header>  
+        
+        <div class="cover">
+        <div class="product">
+                
+        <img src="IMG_20231018_220818.jpg" alt="Product Image">
+                
+        <h4>Specil Couple Pot Biriyani</h4>
+                
+        <p>Price:Rs.1230</p>
+               
+         <label for="quantity">Quantity:</label>
+                
+        <input type="number" id="quantity" name="quantity" value="1">
+         
+          <label>
+                
+        <input type="checkbox" name="item" value="1230.00"> Add item  
+         </label><br>
+        
+                 
+        
+           
+         </div>
+        
+        
+        <div class="product">
+                
+        <img src="IMG_20231018_220829.jpg" alt="Product Image">
+                
+        <h4>Chicken Dum Pot Biriyani</h4>
+                
+        <p>Price:Rs.  3000</p>
+               
+         <label for="quantity">Quantity:</label>
+                
+        <input type="number" id="quantity" name="quantity" value="1">
+        
+        <input type="checkbox" name="item" value=" 3000.00"> Add item         
+        </label>
+         </div>
+        
+        
+        <div class="product">
+                
+        <img src="IMG_20231018_220835.jpg" alt="Product Image">
+                
+        <h4>Vegitable Biriyani Pot </h4>
+                
+        <p>Price:Rs. 2500</p>
+               
+         <label for="quantity">Quantity:</label>
+                
+        <input type="number" id="quantity" name="quantity" value="1">
+               
+        <input type="checkbox" name="item" value="2500.00"> Add item         
+        </label>
+         </div>
+        
+        
+        
+        </div>
+        
+        
+        <hr color="red" size="10%">
+        
+        
+      <header>
+        <h1 id="Others">Others</h1>
+        </header>  
+        
+        <div class="cover">
+        <div class="product">
+                
+        <img src="1653892192923_13polpittu_m.jpg" alt="Product Image">
+                
+        <h4>Pol Pittu With Katta Sambol</h4>
+                
+        <p>Price:Rs. 900</p>
+               
+         <label for="quantity">Quantity:</label>
+                
+        <input type="number" id="quantity" name="quantity" value="1">
+         
+          <label>
+                
+        <input type="checkbox" name="item" value="900.00"> Add item  
+         </label><br>
+        
+                 
+        
+           
+         </div>
+        
+        
+        <div class="product">
+                
+        <img src="1653893167508_14stringhoppers_m.jpg" alt="Product Image">
+                
+        <h4>String Hoppers</h4>
+                
+        <p>Price:Rs. 600</p>
+               
+         <label for="quantity">Quantity:</label>
+                
+        <input type="number" id="quantity" name="quantity" value="1">
+        
+        <input type="checkbox" name="item" value="600.00"> Add item         
+        </label>
+         </div>
+        
+        
+        <div class="product">
+                
+        <img src="IMG_20231018_220849.jpg" alt="Product Image">
+                
+        <h4>Spaghettti</h4>
+                
+        <p>Price:Rs. 1000</p>
+               
+         <label for="quantity">Quantity:</label>
+                
+        <input type="number" id="quantity" name="quantity" value="1">
+               
+        <input type="checkbox" name="item" value="1000.00"> Add item         
+        </label>
+         </div>
+        
+        
+        <div class="product">
+                
+        <img src="IMG_20231018_220857.jpg" alt="Product Image">
+                
+        <h4>Penne Pasta With Arabiata Sause/h4>
+                
+        <p>Price:Rs. 1200</p>
+               
+         <label for="quantity">Quantity:</label>
+                
+        <input type="number" id="quantity" name="quantity" value="1">
+                
+        <input type="checkbox" name="item" value="1200.00"> Add item         
+        </label> 
+         </div>
+        
+        
+        
+        
+        </div>
+        
+        
+        <hr color="red" size="10%">
+        
+        
+        <header>
+          <h1 id="desserts">Desserts</h1>
+          </header>  
+          
+          <div class="cover">
+          <div class="product">
+                  
+          <img src="1335953470982_caffe_latte.jpg" alt="Product Image">
+                  
+          <h4>Cafe Latte</h4>
+                  
+          <p>Price:Rs. 950</p>
+                 
+           <label for="quantity">Quantity:</label>
+                  
+          <input type="number" id="quantity" name="quantity" value="1">
+           
+            <label>
+                  
+          <input type="checkbox" name="item" value="950.00"> Add item  
+           </label><br>
+          
+                   
+          
+             
+           </div>
+          
+          
+          <div class="product">
+                  
+          <img src="1595413439932_dsc_5707_m.jpg" alt="Product Image">
+                  
+          <h4>Java chocolte anightmare</h4>
+                  
+          <p>Price:Rs.910</p>
+                 
+           <label for="quantity">Quantity:</label>
+                  
+          <input type="number" id="quantity" name="quantity" value="1">
+          
+          <input type="checkbox" name="item" value="910.00"> Add item         
+          </label>
+           </div>
+          
+          
+          <div class="product">
+                  
+          <img src="1599130483553_dsc_9319_m.jpg" alt="Product Image">
+                  
+          <h4>Java Oreo Coockie And Cream
+          </h4>
+                  
+          <p>Price:Rs. 1100</p>
+                 
+           <label for="quantity">Quantity:</label>
+                  
+          <input type="number" id="quantity" name="quantity" value="1">
+                 
+          <input type="checkbox" name="item" value="1100.00"> Add item         
+          </label>
+           </div>
+          
+          
+          <div class="product">
+                  
+          <img src="1669705636114_dsc_0385_m.jpg" alt="Product Image">
+                  
+          <h4>Java Chip Cream Frappe</h4>
+                  
+          <p>Price:Rs. 1,380</p>
+                 
+           <label for="quantity">Quantity:</label>
+                  
+          <input type="number" id="quantity" name="quantity" value="1">
+                  
+          <input type="checkbox" name="item" value="1,380.00"> Add item         
+          </label> 
+           </div>
+          
+          
+          
+          <div class="product">
+                  
+          <img src="1680077803251_dsc_2501_m.jpg" alt="Product Image">
+                  
+          <h4>Troopical Delight</h4>
+                  
+          <p>Price:Rs. 990</p>
+                 
+           <label for="quantity">Quantity:</label>
+                  
+          <input type="number" id="quantity" name="quantity" value="1">
+                  
+          <input type="checkbox" name="item" value=" 990.00"> Add item         
+          </label> 
+           </div>
+          
+          
+          
+          
+          <div class="product">
+                  
+          <img src="IMG_20231018_220924.jpg" alt="Product Image">
+                  
+          <h4>Granola Fruit Parfait</h4>
+                  
+          <p>Price:Rs.1150</p>
+                 
+           <label for="quantity">Quantity:</label>
+                  
+          <input type="number" id="quantity" name="quantity" value="1">
+               
+          <input type="checkbox" name="item" value="1150.00"> Add item         
+          </label> 
+           </div>
+          </div>
+          
+          
+          <hr color="red" size="20%">
+          
+          
+
+<br><br><br><br><br>
+<div class="product">
+ 
+<button onclick="calculateTotal()">Calculate Total</button><br>
+
+   
+ <div id="total"></div>
+<br><br><br>
+<a href="Billing details.html"><button id="add-to-cart">Check Out</button>
+   
+
+</div>
+</body>
+
+</html>
